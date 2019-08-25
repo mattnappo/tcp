@@ -1,3 +1,7 @@
+/* Big Arduino */
+
+#define STATUS LOW
+
 #define GREEN_ 13
 #define GREENW 12
 
@@ -10,20 +14,13 @@
 #define ORANGE_ 7
 #define ORANGEW 6
 
+int write_green() {
+  digitalWrite(GREEN_, STATUS);
+  digitalWrite(GREENW, STATUS);
+}
+
 
 void setup() {
-//  pinMode(GREEN_, INPUT);
-//  pinMode(GREENW, INPUT);
-//
-//  pinMode(BLUE_, INPUT);
-//  pinMode(BLUEW, INPUT);
-//
-//  pinMode(BROWN_, INPUT);
-//  pinMode(BROWNW, INPUT);
-//
-//  pinMode(ORANGE_, INPUT);
-//  pinMode(ORANGEW, INPUT);
-
   pinMode(GREEN_, OUTPUT);
   pinMode(GREENW, OUTPUT);
 
@@ -40,10 +37,5 @@ void setup() {
 }
 
 void loop() {
-//  Serial.write(
-//    digitalRead(GREEN_)
-//  );
-
-//  digitalWrite(GREEN_, HIGH);
-//  digitalWrite(GREENW, HIGH);
+  
 }

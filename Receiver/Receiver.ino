@@ -1,49 +1,34 @@
-#define GREEN_ 13
-#define GREENW 12
+/* Mini Arduino */
 
-#define BLUE_ 10
-#define BLUEW 11
+#define GREEN_ 2
+#define GREENW 3
 
-#define BROWN_ 8
-#define BROWNW 9
+#define BLUE_ 4
+#define BLUEW 5
 
-#define ORANGE_ 7
-#define ORANGEW 6
+#define BROWN_ 6
+#define BROWNW 7
+
+#define ORANGE_ 8
+#define ORANGEW 9
 
 
 void setup() {
-//  pinMode(GREEN_, INPUT);
-//  pinMode(GREENW, INPUT);
-//
-//  pinMode(BLUE_, INPUT);
-//  pinMode(BLUEW, INPUT);
-//
-//  pinMode(BROWN_, INPUT);
-//  pinMode(BROWNW, INPUT);
-//
-//  pinMode(ORANGE_, INPUT);
-//  pinMode(ORANGEW, INPUT);
+  pinMode(GREEN_, INPUT);
+  pinMode(GREENW, INPUT);
 
-  pinMode(GREEN_, OUTPUT);
-  pinMode(GREENW, OUTPUT);
+  pinMode(BLUE_, INPUT);
+  pinMode(BLUEW, INPUT);
 
-  pinMode(BLUE_, OUTPUT);
-  pinMode(BLUEW, OUTPUT);
+  pinMode(BROWN_, INPUT);
+  pinMode(BROWNW, INPUT);
 
-  pinMode(BROWN_, OUTPUT);
-  pinMode(BROWNW, OUTPUT);
-
-  pinMode(ORANGE_, OUTPUT);
-  pinMode(ORANGEW, OUTPUT);
+  pinMode(ORANGE_, INPUT);
+  pinMode(ORANGEW, INPUT);
 
   Serial.begin(9600);
 }
 
 void loop() {
-//  Serial.write(
-//    digitalRead(GREEN_)
-//  );
 
-//  digitalWrite(GREEN_, HIGH);
-//  digitalWrite(GREENW, HIGH);
 }
