@@ -12,6 +12,21 @@
 #define ORANGE_ 8
 #define ORANGEW 9
 
+int read_green() {
+  Serial.write("\nGREEN_: ");
+  Serial.write(digitaflRead(GREEN_));
+  Serial.write("\nGREENW: ");
+  Serial.write(digitalRead(GREENW));
+  Serial.write("\n");
+} 
+
+int read_blue() {
+  Serial.write("\nBLUE_: ");
+  Serial.write(digitalRead(BLUE_));
+  Serial.write("\nBLUEW: ");
+  Serial.write(digitalRead(BLUEW));
+  Serial.write("\n");
+}
 
 void setup() {
   pinMode(GREEN_, INPUT);
@@ -30,5 +45,5 @@ void setup() {
 }
 
 void loop() {
-
+  read_blue();
 }

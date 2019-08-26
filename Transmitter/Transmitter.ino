@@ -17,6 +17,29 @@
 int write_green() {
   digitalWrite(GREEN_, STATUS);
   digitalWrite(GREENW, STATUS);
+
+  return 0;
+}
+
+int write_blue() {
+  digitalWrite(BLUE_, STATUS);
+  digitalWrite(BLUEW, STATUS);
+
+  return 0;
+}
+
+int write_brown() {
+  digitalWrite(BROWN_, STATUS);
+  digitalWrite(BROWNW, STATUS);
+
+  return 0;
+}
+
+int write_orange() {
+  digitalWrite(ORANGE_, STATUS);
+  digitalWrite(ORANGEW, STATUS);
+
+  return 0;
 }
 
 
@@ -37,5 +60,5 @@ void setup() {
 }
 
 void loop() {
-  
+  write_blue();
 }
